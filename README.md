@@ -54,6 +54,6 @@ The Book Recommendation System successfully addresses the challenges posed by in
 
 ## DOCUMENTATION
 ### B.Tech Final Year Project
-This repository contains the resources and documentation for the B.Tech Final Year Project. The project aims to demonstrate the application of theoretical knowledge acquired during the course and to solve real-world problems through innovative solutions. The project includes a comprehensive report and a PowerPoint presentation that encapsulate the research, design, implementation, and evaluation phases of the project.
-[Book Recommendation System Report](https://drive.google.com/file/d/1FxE6w9A6xYS943fr9Lnvx3ZdJ004i3ny/view?usp=sharing)
+This repository contains the resources and documentation for the B.Tech Final Year Project. The project aims to demonstrate the application of theoretical knowledge acquired during the course and to solve real-world problems through innovative solutions. The project includes a comprehensive report and a PowerPoint presentation that encapsulate the research, design, implementation, and evaluation phases of the project.<br>
+[Book Recommendation System Report](https://drive.google.com/file/d/1FxE6w9A6xYS943fr9Lnvx3ZdJ004i3ny/view?usp=sharing)<br>
 [Book Recommendation System Presentation](https://www.canva.com/design/DAGF3M_eLaM/IG1Cud4CKJrMlkNLmzdeqQ/view?utm_content=DAGF3M_eLaM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9adf7cc057)
