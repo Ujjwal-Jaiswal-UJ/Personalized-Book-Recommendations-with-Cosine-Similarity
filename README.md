@@ -12,38 +12,38 @@ The primary objective of the Book Recommendation System is to enhance the readin
 
 • <u>Foster a Satisfying Reading Experience</u>: By providing relevant recommendations, users can explore new genres and authors, enriching their overall reading journey.
 ### METHODOLOGY
-1. Dataset
+1. Dataset<br>
 The Book-Crossing dataset serves as the foundation for the recommendation system. It consists of three critical components:
 Users: Contains anonymized user IDs and demographic information, which helps in understanding user behavior and tailoring recommendations.
 Books: Provides detailed information about each book, including title, author, and publication year, which is essential for generating recommendations.
 Ratings: Includes explicit ratings (on a scale from 1 to 10) and implicit feedback (expressed as binary data), which are crucial for understanding user preferences and interactions.
 
-2. Popularity-Based Filtering Approach
+2. Popularity-Based Filtering Approach<br>
 This approach recommends books based on their popularity among users. It identifies trending books by analyzing metrics such as the number of ratings and views. Key features include:
 Trending Books Display: The system showcases the top 50 trending books on the homepage, allowing users to discover popular reads easily.
 Criteria for Popularity: Only books with a significant number of ratings (e.g., more than 250) are considered to ensure that only well-received titles are recommended.
 
-3. Collaborative Filtering Approach
+3. Collaborative Filtering Approach<br>
 This method personalizes recommendations by leveraging patterns in user behavior. It operates under the premise that users with similar tastes will enjoy similar books. The collaborative filtering approach is divided into two types:
 <u>User-User Collaborative Filtering</u>: Recommends books based on similarities between users who have rated similar items.
 <u>>Item-Item Collaborative Filtering</u>: Suggests books that are similar to those the user has previously liked.To implement this:
 A pivot table is created where rows represent book titles and columns represent user IDs, with values indicating ratings.
 The cosine similarity metric is used to calculate similarity scores between books, enabling personalized recommendations based on user input.
 
-4. Website Development
+4. Website Development<br>
 The web application is developed using Flask, a lightweight Python framework that facilitates easy integration between the backend recommendation system and the frontend interface. The website consists of two main pages:
 
-A. <u>Homepage (index.html)</u>
+    A. <u>Homepage (index.html)</u>
 
-• This page displays trending books using data from the Top50Books dataframe. Users can navigate through sections like 'Home', 'Recommend', and 'Contact'.
+    • This page displays trending books using data from the Top50Books dataframe. Users can navigate through sections like 'Home', 'Recommend', and 'Contact'.
 
-• The homepage features a visually appealing layout showcasing book images, titles, authors, votes, and ratings.
+    • The homepage features a visually appealing layout showcasing book images, titles, authors, votes, and ratings.
 
-B. <u>Recommendation Page (recommend.html)</u>
+    B. <u>Recommendation Page (recommend.html)</u>
 
-• Users can input their favorite book title in a search box to receive personalized recommendations. The resulting recommendations are displayed along with relevant details such as book images and authors.
+    • Users can input their favorite book title in a search box to receive personalized recommendations. The resulting recommendations are displayed along with relevant details such as book images and authors.
 
-• The backend processes this input using a function that retrieves the book index from the dataset and finds similar titles based on calculated similarity scores.
+    • The backend processes this input using a function that retrieves the book index from the dataset and finds similar titles based on calculated similarity scores.
 
 The combination of a robust recommendation engine and an intuitive user interface ensures that users have a seamless experience while exploring new literary options.
 
