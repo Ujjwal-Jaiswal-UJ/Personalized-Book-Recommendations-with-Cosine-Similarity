@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    .text-white{
+        color:white
+    }
+</style>
+<body style="background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);">
+
+    <nav class="navbar navbar-expand-lg" style="background-color:#9497f0">
+        <a class="navbar-brand fw-bold fs-2 mx-2">Readers' Radar Website</a>
+        <ul class="nav navbar-nav">
+            <li><a class="text-white" href="/">Home</a></li>
+            <li><a class="text-white mx-2" href="/recommend">Recommend</a></li>
+            <li><a class="text-white">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-black my-3" style="font-size:50px">Recommend Search</h1>
+                <form action="/recommend_books" method="POST">
+                    <input name="user_input" type="text" class="form-control"><br>
+                    <input type="submit" class="btn btn-lg btn-warning">
+                </form>
+            </div>
+
+            {% if data %}
+
+             {% for i in data %}
+
+                <div class="col-md-3" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <img class="card-img-top" src="{{i[2]}}">
+                            <h4 class="text-black">{{i[0]}}</h4>
+                            <p class="text-black">{{i[1]}}</p>
+                        </div>
+                    </div>
+                </div>
+
+             {% endfor %}
+
+            {% endif %}
+
+            
+
+        </div>
+    </div>
+
+</body>
+</html>
